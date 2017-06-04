@@ -39,7 +39,7 @@ font-family: 'Lobster', cursive;
   width: 100%;
 }
 
-.enter {
+/*.enter {
   position: absolute;
   left: 30%;
   top: 30%;
@@ -60,7 +60,7 @@ font-family: 'Lobster', cursive;
 
 .enter, .enter:hover {
   text-decoration: none;
-}
+}*/
 
 @keyframes blinker {
   50% { opacity: 0; }
@@ -87,12 +87,6 @@ font-family: 'Lobster', cursive;
 
 .carousel-inner {
   border-radius: 15px;
-}
-
-@media screen and(max-width: 600px) {
-  .carousel-caption {
-    visibility: hidden;
-  }
 }
 
 .carousel-control.left,
