@@ -4,8 +4,9 @@
 ## Table of content:
 > ###`in progress...`
 > 
-* simple calendar
-* safe content
-* calculator
-* sokoban
+>* simple calendar
+>* safe content
+>* calculator
+>* sokoban
+>
 
