@@ -71,6 +71,7 @@ font-family: 'Lobster', cursive;
   margin: 5% auto;
   opacity: 0.9;
   cursor: pointer;
+  animation-duration: 2.5s;
 }
 
 .img-responsive,
@@ -90,7 +91,7 @@ font-family: 'Lobster', cursive;
 }
 
 .carousel-caption {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,0);
   position: absolute;
   left: 0;
   right: 0;
@@ -98,6 +99,7 @@ font-family: 'Lobster', cursive;
   z-index: 10;
   padding: 0 0 10px 25px;
   color: #fff;
+  text-shadow: -3px 0 4px #006;
   text-align: left;
 }
 
