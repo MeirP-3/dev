@@ -1,0 +1,21 @@
+.piano {
+    text-align: center;
+}
+
+.piano button {
+    
+    margin: 20px;
+    border: 0;
+    padding: 2em;
+    
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.playing {
+    outline: 1px solid gold;
+}
+
+button {
+    outline: 0;
+}

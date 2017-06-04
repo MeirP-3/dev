@@ -1,0 +1,17 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "projects in process",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel serve styles",
+    "serve": "live-server",
+    "styles": "node-sass css/style.scss css/style.css -w"
+  },
+  "author": "Meir Pechthalt",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calendar</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i|Dancing+Script|Gloria+Hallelujah|Indie+Flower|Oswald:300"
+        rel="stylesheet">
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+</head>
+
+<body>
+        <button onclick="toggleInputsVisibility()" class="btn-add-event action">add event</button>
+        <div class="add-event hidden">
+            <button class="close" onclick="toggleInputsVisibility()">x</button>
+            <p>Title:<input type="text" id="title"></p>
+            <p>Start:<input type="datetime-local" id="start"></p>
+            <p>End:<input type="datetime-local" id="end"></p>
+            <p>participants:<input type="text" id="participants"></p>
+            <button onclick="getEventFromUser()" class="action">add</button>
+        </div>
+
+        <button onclick="showNextEvent()" class="action">show next event</button>
+
+        <button onclick="showAllEvents()" class="action">show all events</button>
+
+        <div class="count-events">
+            <button onclick="countEventsPerPerson()" class="action">count events per person</button>
+            <input type="text" id="gPerson">
+        </div>
+
+        <div class="view-area"></div>
+        </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/funcs.js"></script>
+    <script src="js/Event.class.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

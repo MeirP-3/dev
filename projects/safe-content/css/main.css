@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    border: 2px solid gold;
+    min-height: 95vh;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+header {
+    background-color: lightsalmon;
+    padding : 0.5em;
+}
+
+header, footer {
+    min-width: 98%;
+}
+
+.btn-log {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: brown;
+    color: lightgray;
+    text-align: center;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+}

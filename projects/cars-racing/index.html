@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Car Racing</title>
+</head>
+
+<body onload="initGame()" onkeyup="handleKey(event)">
+    <header>
+        <h1>Car Racing</h1>
+    </header>
+    <main>
+        <button class="btn-start" onclick="startRace()">start race</button>
+        <div class="road">
+            <div title="car1" class="car car1"></div>
+            <hr class="dash" />
+            <div title="car2" class="car car2"></div>
+        </div>
+        <div class="popup">
+            <h1>
+                AND THE WINNER IS.....
+            </h1>
+            <h1>
+            </h1>
+            <button class="btn-close-popup" onclick="hideVictoryPopup()">close</button>
+        </div>
+    </main>
+
+    <footer>
+        coffeerights &copy; me
+    </footer>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

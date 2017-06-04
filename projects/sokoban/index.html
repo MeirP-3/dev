@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sokoban</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <header>
+        <h1 class="header-text">
+            SOKOBAN!!!
+        </h1>
+        <h4 class="timer">seconds passed: <span></span></h4>
+        <h4 class="steps">steps: <span></span></h4>
+    </header>
+    <main>
+        <div class="box-sokoban">
+        </div>
+        <div class="popup">
+            <h2 class="victory"></h2>
+            <div class="play-time">
+                <h4>VICTORY!</h4>
+                <h4>your time is
+                    <span class="value-time"></span> seconds.
+                </h4>
+            </div>
+            <div class="final-score">
+                <h4>your final score is
+                    <span class="value-final-score"></span>!</h4>
+            </div>
+            <button class="btn-close-popup" onclick="initGame()">close</button>
+        </div>
+    </main>
+    <footer>
+        Coffeerights &copy;
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

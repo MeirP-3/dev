@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Safe Content</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body onload="checkProtectionLevel()">
+    <header>
+        <h1>
+            Safe Content
+        </h1>
+        <h3>
+            <button class="btn-login default" onclick="connectUser()">
+                Login
+            </button>
+            <button class="btn-logout protected hidden" onclick="logout()">
+                Logout
+            </button>
+        </h3>
+        <a href="admin.html" class="admin-page protected-admin hidden">admin</a>
+    </header>
+    <main class="protected hidden">
+        <div class="box-img">
+            <img src="img/pic.png" alt="confidential pic">
+        </div>
+    </main>
+    <footer>
+        <h3>coffeeright &copy; artificial sweetener please
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

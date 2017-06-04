@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame('beginner')">
+    <header>
+
+        <h1 class="header-text">
+            Mine Sweeper
+            <select onclick="initGame(value)">
+            <option value="">Choose level</option>
+            <option value="beginner">beginner</option>
+            <option value="medium">medium</option>
+            <option value="expert">expert</option>
+        </select>
+        </h1>
+        <h4 class="timer">seconds passed: <span></span></h4>
+    </header>
+    <main>
+        <div class="box-mine-sweeper">
+            <table class="mine-sweeper" oncontextmenu="return false"></table>
+        </div>
+        <div class="popup">
+            <h2 class="victory"></h2>
+            <h2 class="game-over"></h2>
+            <span class="play-time"></span>
+            <button class="btn-close-popup" onclick="initGame(1)">close</button>
+        </div>
+    </main>
+    <footer>
+        Coffeerights &copy;
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

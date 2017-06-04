@@ -1,0 +1,125 @@
+<!--TODO:
+* modal for add meeting
+* modal for count per person
+* and for next event (use the same modal)
+* show events: title instead 'label', details inside panel (in different color), date on panel title.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calendar</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/dashboard.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Simple calendar</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#" class="disabled">Actions </a></li>
+                    <li><button class="btn btn-link">Show next event</button></li>
+                    <li><button class="btn btn-link">show all events</button></li>
+                    <li><button class="btn btn-link">Add event</button></li>
+                    <li><button class="btn btn-link" data-toggle="collapse" data-target="#count-event-per-person">count events per person</button></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Events list</h1>
+
+                <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                            </div>
+                            <div class="panel-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fugit deserunt harum officiis, deleniti dolores animi ipsa sed soluta beatae ducimus porro enim provident dolor amet qui eaque, sit voluptate.
+                            </div>
+                        </div>
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                            </div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                            </div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Panel title</h3>
+                            </div>
+                            <div class="panel-body">
+                                Panel content
+                            </div>
+                        </div>
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="lib/jquery/jquery.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/funcs.js"></script>
+        <script src="js/Event.class.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>

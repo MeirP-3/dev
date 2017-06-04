@@ -1,0 +1,35 @@
+@import 'carousel';
+
+$welcome-color: gold;
+$welcome-small-color: silver;
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/gallery-from-google-pictures.jpeg');
+    background-size: contain;
+}
+
+.welcome-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation-duration: 10s;
+    animation-delay: 1.5s;
+    h1 {
+        font-family: 'Slabo 27px', serif;
+        color: $welcome-color;
+        letter-spacing: 2;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+*/

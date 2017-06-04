@@ -1,0 +1,32 @@
+
+header {
+    background-color: lightsalmon;
+    padding : 10px;
+}
+
+.balloon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+}
+
+.balloon-1 {
+    background-color: greenyellow;
+    left: 300px;
+}
+
+.balloon-2 {
+    background-color: darkslateblue;
+    left: 600px;
+}
+
+footer {
+    background-color: brown;
+    color: lightgray;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+}

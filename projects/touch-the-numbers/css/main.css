@@ -1,0 +1,11 @@
+.btn-game {
+  height: 24vmin;
+  width: 24vmin;
+  max-height: btn-game-max-size;
+  background-color: yellow;
+  border: 2px solid green;
+  cursor: pointer;
+  font-size: 4rem; }
+
+.checked {
+  background-color: grey; }

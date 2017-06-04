@@ -1,0 +1,102 @@
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/gallery-from-google-pictures.jpeg") center repeat-x;
+  background-size: auto 100%;
+   }
+
+.welcome-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 2s;
+  }
+  .welcome-container h1 {
+    display: block;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 700;
+    color: gold;
+    padding: 0 0.2em;
+    /*background-color: gold;*/
+    letter-spacing: 2;
+    font-size: 6em;
+    text-shadow: -3px 0 4px #006;
+     }
+     
+
+.hidden {
+  display: none;
+}
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+*/
+
+.container {
+  width: 100%;
+}
+
+.enter {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  min-width: 40%;
+  height: 10%;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 2em;
+  color: white;
+  opacity: 0.9;
+  animation: blinker 6s linear infinite;
+}
+
+.enter, .enter:hover {
+  text-decoration: none;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.carousel {
+  max-width: 700px;
+  margin: 5% auto;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+@media screen and(max-width: 600px) {
+  .carousel-caption {
+    visibility: hidden;
+  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}

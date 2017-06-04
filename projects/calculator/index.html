@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Welcome to my Calculator!</h1>
+        </header>
+        <div class="box-calculator">
+            <div class="box-panel">
+                <div class="panel">0
+                </div>
+            </div>
+            <div class="box-btns">
+                <div class="btns">
+                    <div class="btns-basic">
+                        <div class="btns-row">
+                            <button onclick="clearChar()"><span> <= </span></button>
+                            <button onclick="clearPanel()"><span> C </span></button>
+                            <button onclick="negate()"><span>+-</span></button>
+                            <button onclick="setOperator('/')"><span> ÷ </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button onclick="addDigit(7)"><span> 7 </span></button>
+                            <button onclick="addDigit(8)"><span> 8 </span></button>
+                            <button onclick="addDigit(9)"><span> 9 </span></button>
+                            <button onclick="setOperator('*')"><span> * </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button onclick="addDigit(4)"><span> 4 </span></button>
+                            <button onclick="addDigit(5)"><span> 5 </span></button>
+                            <button onclick="addDigit(6)"><span> 6 </span></button>
+                            <button onclick="setOperator('-')"><span> - </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button onclick="addDigit(1)"><span> 1 </span></button>
+                            <button onclick="addDigit(2)"><span> 2 </span></button>
+                            <button type="button" onclick="addDigit(3)"><span> 3 </span></button>
+                            <button onclick="setOperator('+')"><span> + </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button onclick="addDigit(0)"><span> 0 </span></button>
+                            <button onclick="addDigit('.')"><span> . </span></button>
+                            <button class="disabled"><span> % </span></button>
+                            <button onclick="showResult()"><span> = </span></button>
+                        </div>
+                    </div>
+                    <div class="btns-schientific">
+                        <div class="btns-row">
+                            <button class="disabled"><span> MC </span></button>
+                            <button class="disabled"><span> MR </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button class="disabled"><span> MS </span></button>
+                            <button class="disabled"><span> M+ </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button class="disabled"><span> CE </span></button>
+                            <button class="disabled"><span> M- </span></button>
+                        </div>
+                        <div class="btns-row">
+                            <button class="disabled"><span> 1/x </span></button>
+                            <button class="disabled"><span> √ </span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Coffeerights &copy; just a little touch of milk please &#x1f60a;
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

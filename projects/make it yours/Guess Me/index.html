@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Guess Me</title>
+
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <section id="welcome-container">
+            <h2>Think of someone</h2>
+            <h3>And I will guess</h3>
+            <button class="btn btn-lg btn-success" onclick="startGame()">OK, Guess!</button>
+        </section>
+
+        <section hidden id="quest-container" >
+            <img class="img-responsive img-circle" src="" >
+            <h2></h2>
+            <button class="btn btn-lg btn-success" onclick="userAns(true)">Yes!</button>
+            <button class="btn btn-lg btn-danger" onclick="userAns(false)">No...</button>
+        </section>
+
+        <section hidden  id="quest-new">
+            <h2>So who was it?</h2>
+
+            <div class="form-inline">
+                <div class="form-group">
+                    <label for="newName">Name</label>
+                    <input type="text" class="form-control" id="newName" placeholder="Who was it?">
+                </div>
+                <div class="form-group">
+                    <label for="newImgUrl">Image</label>
+                    <input type="url" class="form-control" id="newImgUrl" placeholder="Image Url">
+                </div>
+                <div class="form-group">
+                    <label for="newQuest">Quest</label>
+                    <input type="text" class="form-control" id="newQuest" placeholder="Quest to distinguish (yes is your character)">
+                </div>
+                <button class="btn btn-default" onclick="addNewQuest()">Add New</button>
+            </div>
+        </section>
+
+    </div>
+
+   
+    
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

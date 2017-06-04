@@ -1,0 +1,30 @@
+@import "_vars";
+
+.container {
+    margin: 0 5em;
+    min-height: 100%;
+}
+
+.container-btns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.btn-game {
+    height: $btn-game-size;
+    width: $btn-game-size;
+    max-height: $btn-game-max-size;
+    max-width: $btn-game-max-size;
+    background-color: $unchecked-color;
+    border: $btn-game-border;
+    cursor: $btn-game-cursor;
+    font-size: $btn-game-font-size;
+}
+
+.checked {
+    background-color: $checked-color;
+}
+

@@ -1,0 +1,141 @@
+header {
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+header, footer {
+    background-color: greenyellow;
+    color: red;
+    text-align: center;
+    margin: 1vw;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+main {
+    margin: 1vw;
+    position: relative;
+}
+
+.box-calculator {
+    max-width: 400px;
+    /*height: 30vw;*/
+    margin: auto;
+    border: 0.4vw solid blue;
+    border-radius: 1vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.box-panel {
+    display: flex;
+    justify-content: center;
+    /*height: 15%;*/
+}
+
+.panel {
+    background-color: yellow;
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    width: 88%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    padding: 1vmax;
+    border: 2px dashed brown;
+    border-radius: 2px;
+    /*border-radius: 10px;*/
+}
+
+.box-btns {
+    display: flex;
+    justify-content: center;
+    border: 2px dashed grey;
+}
+
+.btns {
+    border: 2px dashed green;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5% 0;
+    max-width: 88%;
+}
+
+.btns-basic, .btns-schientific {
+    /*border: 2px dotted black;*/
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.btns-basic {
+    width: 55%;
+    flex-shrink: 1;
+}
+
+.btns-schientific {
+    width: 35%;
+    flex-shrink: 1;
+}
+
+.btns-row {
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: space-around;
+    height: 17%;
+}
+
+button, button:active {
+    flex-shrink: 1;
+    border-radius: 5%;
+    border: 0.2vw solid red;
+    cursor : pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btns-basic button {
+    width: 22%;
+}
+
+.btns-schientific button {
+    width: 35%;
+}
+
+button span, .panel span {
+    /*font-size: 1.5vmax;*/
+    padding: 0.7vmax;
+    margin-bottom: 1.2vmax;
+}
+
+.disabled, .disabled:hover {
+    border: 0.2vw dotted purple;
+}
+
+.panel span {
+    margin-left: 2%;
+}
+
+button:hover {
+    border-color: pink;
+}
+
+footer {
+    padding: 0.4em;
+}
+
+@media screen and (max-width:510px) {
+    .btns {
+        flex-flow: column nowrap;
+    }   
+}

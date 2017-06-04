@@ -1,0 +1,118 @@
+
+header {
+    background-color: yellowgreen;
+    font-family: cursive;
+    color: blue;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.header-text {
+    margin: 5px;
+}
+
+select {
+    background-color: yellowgreen;
+    font-family: cursive;
+    color: blue;
+    border-radius: 2px;
+}
+
+.timer {
+    visibility: hidden;
+    margin: 5px;
+}
+
+.btn-start {
+    display: none;
+}
+
+body {
+    background-color: lightblue;
+}
+
+table, td {
+    margin: 10px;
+    /*border: 2px solid blue;*/
+}
+
+table {
+    border: 5px solid grey;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+td {
+    width: 40px;
+    height:40px;
+    /*border-radius: 5px;*/
+}
+
+/*.cell-content-hidden {
+    display: none;
+}*/
+
+.hide, .suspected {
+    cursor: pointer;
+    background-color: gray;
+}
+
+.hide, .mine, .suspected, .clear {
+   width: 40px;
+   height: 40px;
+   border-radius: 8px;
+}
+
+.clear {
+    color: black;
+    background-color: white;
+}
+
+.suspected, .clear, .mine {
+    text-align:center;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.suspected, .content {
+   display: none;
+}
+
+.suspected {
+    color: red;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.mine {
+   background-color: orange;
+}
+
+.stepped-mine {
+    background-color: red;
+}
+
+.popup {
+    background-color: lightgray;
+    border: 5px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    text-align:center;
+    visibility: hidden;
+    position:absolute;
+    top:100px;
+    left: 40%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+footer {
+    background-color: brown;
+    color: lightgray;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 5px;
+}

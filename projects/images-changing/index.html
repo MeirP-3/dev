@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Images Changing</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <h1>
+            Images Changing
+        </h1>
+    </header>
+    <main>
+        <div id="img-0" onclick="imgClicked(this)" class="box-img">
+            <img  src="http://ecodile.com/wp-content/uploads/2015/10/node_icon2.png"  />
+            <div class="txt-img">
+            </div>
+        </div>
+        <div id="img-1" onclick="imgClicked(this)" class="box-img">
+            <img src="http://pimg.p30download.com/APK_IMG/s/com.sololearn.csstrial/icon/icon_0_small.png" 
+            />
+            <div class="txt-img">
+            </div>
+        </div>
+        <div id="img-2" onclick="imgClicked(this)" class=box-img>
+            <img src="https://wordhtml.com/images/wordhtml.png"/>
+            <div class="txt-img">
+            </div>
+        </div>
+        <div class="btns">
+            <button onclick="changeImgs()">change images</button>
+            <button onclick="changeImgsIn5Seconds()">change images in 5 seconds</button>
+            <button onclick="changeImgsEvery2Seconds(this)">change images every 2 seconds</button>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="../utils.js"></script>
+</body>
+
+</html>

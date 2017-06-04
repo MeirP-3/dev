@@ -1,0 +1,48 @@
+header {
+    background-color: chartreuse;
+}
+
+h1 {
+    margin-left: 10%;
+}
+
+main {
+    margin-left: 10%;
+}
+
+.box-img {
+    display: inline-block;
+    width: 130px;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    border: 4px solid transparent;
+    cursor: pointer;
+}
+
+.clicked img{
+    border-color: springgreen;
+}
+
+.txt-img {
+    background-color: darkgoldenrod;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    display: none;
+}
+
+.clicked .txt-img {
+    display: block;
+}
+
+.btns {
+    padding-top: 5%;
+}
+
+button {
+    width: 20%;
+    cursor: pointer;
+}
